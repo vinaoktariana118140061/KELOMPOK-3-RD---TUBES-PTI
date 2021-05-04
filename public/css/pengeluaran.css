@@ -1,0 +1,58 @@
+.layer_beranda{
+    width: 100%;
+    height: 100%;
+    border-color: #CCAC02;
+    background-color: #3F3E39;
+}
+   
+    .TPB{
+    position: absolute;
+    width: 600px;
+    height: 42px;
+    left: 20px;
+    top: 40px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 42px;
+    color: #CCAC02;
+    }
+    .mpe{
+        position: absolute;
+    width: 291px;
+    height: 40px;
+    left: 20px;
+    top: 70px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #000000;
+    border-radius: 8px;
+    background-color: #ED614E;
+    }
+    .tabel3{
+        position: absolute;
+        width: 1168px;
+    left: 20px;
+    top: 100px;
+    background-color: #D1C99B;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    }
+    .no2{
+        width: 10px;
+        border-left: 5px;
+        text-align: center;
+    }
+    .tanggalmasuk2{
+        width: 80px;
+    }

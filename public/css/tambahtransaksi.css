@@ -1,0 +1,387 @@
+
+.modal-header{
+    position: absolute;
+    width: 498px;
+    top: -250px;
+    left: 0px;
+    background-color: #F4EDC5;
+    border-color: white;
+}
+.modal-title{
+    color: black;
+}
+.inputan4{
+    position: absolute;
+    width: 498px;
+    height: 520px;
+    top: -150px;
+    left: 0px;
+	background-color: #F4EDC5;
+
+}
+    
+.s11{
+    position: absolute;
+width: 19.04px;
+height: 18px;
+left: 242px;
+top: 323px;
+}
+.s44{
+    position: absolute;
+width: 19.04px;
+height: 18px;
+left: 405px;
+top: 323px;   
+}
+.Kgg{
+    position: absolute;
+width: 22px;
+height: 21px;
+left: 262px;
+top: 323px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.pcss{
+    position: absolute;
+width: 30px;
+height: 21px;
+left: 425px;
+top: 323px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.label-satuan1{
+    position: absolute;
+    left: 20px;
+    top: 323px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+    
+   
+    
+    .label-tanggal{
+        position: absolute;
+    width: 65px;
+    height: 22px;
+    left: 20px;
+    top: 63px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    }
+    .tanggal{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 196px;
+    top: 63px;
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    }
+    .e-tanggal{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 88px;
+    }
+    .label-namabarang{
+        position: absolute;
+    width: 109px;
+    height: 22px;
+    left: 20px;
+    top: 115px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .namabarang{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 196px;
+    top: 115px;
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    }
+    .e-namabarang{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 140px;
+    }
+    .label-pemasok{
+        position: absolute;
+    width: 75px;
+    height: 22px;
+    left: 20px;
+    top: 167px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .pemasok{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 196px;
+    top: 167px;
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    }
+    .e-pemasok{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 192px;
+    }
+    .label-nota{
+        position: absolute;
+    width: 69px;
+    height: 22px;
+    left: 20px;
+    top: 219px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .nota{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 196px;
+    top: 219px;
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    }
+    .e-nota{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 244px;
+    }
+    .label-jumlah{
+        position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 20px;
+    top: 271px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .jumlah{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 196px;
+    top: 271px;
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    }
+    .e-jumlah{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 296px;
+    }
+    .label-bayar{
+        position: absolute;
+    width: 200px;
+    height: 22px;
+    left: 20px;
+    top: 375px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .cb1{
+        position: absolute;
+    width: 19.04px;
+    height: 18px;
+    left: 242px;
+    top: 375px;
+    }
+    .cb2{
+        position: absolute;
+    width: 19.04px;
+    height: 18px;
+    left: 405px;
+    top: 375px;
+    }
+    .tunai{
+        position: absolute;
+    width: 44px;
+    height: 21px;
+    left: 263px;
+    top: 375px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .kredit{
+        position: absolute;
+    width: 48px;
+    height: 21px;
+    left: 425px;
+    top: 375px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .e-bayar{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 400px;
+    }
+    .label-harga{
+        position: absolute;
+    width: 111px;
+    height: 22px;
+    left: 20px;
+    top: 427px;
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+    .harga{
+        position: absolute;
+    width: 281px;
+    height: 28px;
+    left: 197px;
+    top: 427px;
+    
+    background: rgba(252, 249, 238, 0.92);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 6px;
+    
+    }
+    .e-harga{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 456px;
+    }
+    .simpan2{
+        position: absolute;
+    width: 95px;
+    height: 29px;
+    left: 382px;
+    top: 479px;
+    background: #CCAC02;
+    border-radius: 6px;
+    }
+    .e-satuan1{
+        position: absolute;
+        width: 281px;
+        height: 28px;
+        left: 196px;
+        top: 345px;
+    }
+    
