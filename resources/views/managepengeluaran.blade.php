@@ -22,7 +22,7 @@
                             <input readonly type="text" name="satuan" value="{{ $item->satuan }}" class="s1">
                             <br><br>
                             <label class="label-jumlahbarang">Jumlah Barang</label>
-                            <input type="number" name="jumlah" class="jumlahbarang">
+                            <input type="number" name="jumlah" class="jumlahbarang" max="{{ $item->stok }}" required>
                             @error('jumlah')
                             <div class="e-jumlah3">
                                 <span class="text-danger jumlah_error">{{ $message }}</span>
@@ -30,7 +30,7 @@
                             @enderror
                             <br><br>
                             <label class="label-tanggalkeluar">Tanggal Keluar</label>
-                            <input type="date" name="tanggal" class="tanggalkeluar">
+                            <input type="date" name="tanggal" class="tanggalkeluar" required>
                             @error('tanggal')
                             <div class="e-tanggal3">
                                 <span class="text-danger tanggal_error">{{ $message }}</span>

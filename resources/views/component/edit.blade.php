@@ -20,16 +20,16 @@
                         </div>
                         @enderror
                         <label class="label-alamat" for="Alamat">Alamat</label>
-			            <input class="alamat" type="alamat" name="alamat" id="Alamat" class="form-control" value="{{ $item->alamat }}">
+			            <input class="alamat" type="text" name="alamat" id="Alamat" class="form-control" value="{{ $item->alamat }}">
                         @error('alamat')
                         <div class="e-alamat2">
                             {{$message}}
                         </div>
                         @enderror
                         <label class="label-kategori" for="kategori" id="label-Kategori">Kategori Barang</label>
-                        <input class="r1" type="radio" id="peralatan" name="kategori" value="{{ $item->kategori }}">
+                        <input class="r1" type="radio" id="peralatan" name="kategori" value="{{ $item->kategori }}" {{ $item->kategori == 'peralatan' ? 'checked' : '' }}>
                         <label  class="peralatan" for="peralatan">Peralatan</label>
-                        <input class="r2" type="radio" id="bahan" name="kategori" value="{{ $item->kategori }}">
+                        <input class="r2" type="radio" id="bahan" name="kategori" value="{{ $item->kategori }}" {{ $item->kategori == 'bahan' ? 'checked' : '' }}>
                         <label class="bahan" for="bahan">Bahan</label>
                         @error('kategori')
                             <br>

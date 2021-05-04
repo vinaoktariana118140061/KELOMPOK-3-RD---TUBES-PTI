@@ -50,25 +50,29 @@ class PembelianController extends Controller
             return redirect('/stok-barang')->with('fail', 'Satuan yang anda masukkan salah');
         }
 
-        $stok_data = [
-            'nama' => $request->nama,
-            'id_pemasok' => $request->id_pemasok,
-            'stok' => $request->jumlah,
-            'satuan' => $request->satuan
-        ];
-        tabel_stok::insert($stok_data);
+        if (($request->satuan == 'pcs' && $pemasok->kategori == 'bahan') || ($request->satuan == 'pcs' && $pemasok->kategori == 'peralatan') ||
+            ($request->satuan == 'kg' && $pemasok->kategori == 'bahan')
+        ) {
+            $stok_data = [
+                'nama' => $request->nama,
+                'id_pemasok' => $request->id_pemasok,
+                'stok' => $request->jumlah,
+                'satuan' => $request->satuan
+            ];
+            tabel_stok::insert($stok_data);
 
-        $pembelian = [
-            'nama' => $request->nama,
-            'date' => $request->tanggal,
-            'id_pemasok' => $request->id_pemasok,
-            'nota' => $request->nota,
-            'jumlah' => $request->jumlah,
-            'payment' => $request->tipe,
-            'price' => $request->harga,
-        ];
-        tabel_pembelian::insert($pembelian);
-        return redirect('/stok-barang')->with('pesan', 'Data berhasil ditambah');
+            $pembelian = [
+                'nama' => $request->nama,
+                'date' => $request->tanggal,
+                'id_pemasok' => $request->id_pemasok,
+                'nota' => $request->nota,
+                'jumlah' => $request->jumlah,
+                'payment' => $request->tipe,
+                'price' => $request->harga,
+            ];
+            tabel_pembelian::insert($pembelian);
+            return redirect('/stok-barang')->with('pesan', 'Data berhasil ditambah');
+        }
     }
 
     public function update(Request $request, $id)

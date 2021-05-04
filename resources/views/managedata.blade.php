@@ -64,7 +64,6 @@
             </table>
         </div>
     </div>
-    <script src='https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js" integrity="sha512-F636MAkMAhtTplahL9F6KmTfxTmYcAcjcCkyu0f0voT3N/6vzAuJ4Num55a0gEJ+hRLHhdz3vDvZpf6kqgEa5w==" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {

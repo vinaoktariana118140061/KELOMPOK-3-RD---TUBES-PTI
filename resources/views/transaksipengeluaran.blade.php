@@ -22,6 +22,7 @@
                     <th>Satuan</th>
                 </tr>
             </thead>
+            <div style="max-height: 550px; overflow-y: scroll; !important">
             <tbody>
                 @foreach ($collection as $key => $item)
                     <tr>
@@ -34,12 +35,13 @@
                     </tr>
                 @endforeach
             </tbody>
+            </div>
         </table>
     </div>
     <script>
-    $(document).ready(function() {
-        $('#example').DataTable();
-    } );
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
     </script>      
 </fieldset> 
 </div>
