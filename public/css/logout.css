@@ -2,11 +2,12 @@
 	position: absolute;
 	width: 497px;
 	height: 170px;
-	top: -20px;
+	top: -40px;
 	right: 0px;
 	background-color: #3F3E39;
 	border-width: 2px;
 	border-radius: 5px;
+	border-style: solid;
 	border-color: #CCAC02;
 }
 
@@ -39,7 +40,7 @@ font-weight: bold;
 background-color: #FE0505;
 text-align: center;
 border-radius: 5px;
-border-color: #FE0505;
+border-color: white;
 font-size: 20px;
 padding-left: 10px;
 }
@@ -54,7 +55,7 @@ font-weight: bold;
 background-color: #CCAC02;
 text-align: center;
 border-radius: 5px;
-border-color: #CCAC02;
+border-color: white;
 font-size: 20px;
 padding-left: 10px;
 }

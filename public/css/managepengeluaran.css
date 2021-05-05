@@ -13,9 +13,11 @@
     position: absolute;
     width: 498px;
     height: 350px;
-    top: -150px;
+    top: -200px;
     left: 0px;
 	background-color: #F4EDC5;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 .label-namakeluar{
@@ -56,7 +58,7 @@ left: 360px;
 top: 295px;
 
 background: #CCAC02;
-border-radius: 11px;
+border-radius: 6px;
 font-family: Roboto;
 font-style: normal;
 font-weight: normal;
@@ -81,10 +83,12 @@ color: #000000;
 }
 .peralatan2{
     position: absolute;
-width: 19.04px;
-height: 18px;
+width: 214px;
+height: 29px;
 left: 242px;
 top: 97.29px;
+background: #FFFEFC;
+border-radius: 5px;
 }
 .bahan2{
     position: absolute;
@@ -193,10 +197,12 @@ color: #000000;
 }
 .s1{
     position: absolute;
-width: 19.04px;
-height: 18px;
+width: 214px;
+height: 29px;
 left: 242px;
-top: 146px;
+top: 140px;
+background: #FFFEFC;
+border-radius: 5px;
 }
 .s2{
     position: absolute;

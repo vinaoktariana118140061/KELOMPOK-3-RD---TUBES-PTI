@@ -63,7 +63,7 @@
                         </div>
                         @enderror
                         <label class="label-satuan1">Satuan</label>
-                        <input type="text" readonly name="satuan" value="{{ $item->satuan }}" class="s11">
+                        <input type="text" readonly name="satuan" value="{{ $item->satuan }}" class="s111">
                         @error('satuan')
                         <div class="e-satuan1">
                         <span class="text-danger">

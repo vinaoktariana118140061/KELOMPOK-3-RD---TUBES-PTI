@@ -79,14 +79,15 @@ top: 200px;
 
 background: #CCAC02;
 border-radius: 11px;
+border-color: white;
 }
 .e-username{
 	position: absolute;
-	left: 80px;
-	top: 90px;
+	left: 90px;
+	top: 120px;
 }
 .e-password{
 	position: absolute;
-	left: 80px;
-	top: 170px;
+	left: 90px;
+	top: 190px;
 }

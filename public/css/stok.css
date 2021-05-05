@@ -45,7 +45,8 @@ line-height: 29px;
 
 color: #000000;
 border-radius: 8px;
-background-color: green;
+border-color: white;
+background-color: #CCAC02;
 }
 .mpe2{
     position: absolute;
