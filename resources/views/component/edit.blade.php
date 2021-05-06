@@ -27,9 +27,9 @@
                         </div>
                         @enderror
                         <label class="label-kategori" for="kategori" id="label-Kategori">Kategori Barang</label>
-                        <input class="r1" type="radio" id="peralatan" name="kategori" value="{{ $item->kategori }}" {{ $item->kategori == 'peralatan' ? 'checked' : '' }}>
+                        <input class="r1" type="radio" id="peralatan" name="kategori" value="peralatan" {{ $item->kategori == 'peralatan' ? 'checked' : '' }}>
                         <label  class="peralatan" for="peralatan">Peralatan</label>
-                        <input class="r2" type="radio" id="bahan" name="kategori" value="{{ $item->kategori }}" {{ $item->kategori == 'bahan' ? 'checked' : '' }}>
+                        <input class="r2" type="radio" id="bahan" name="kategori" value="bahan" {{ $item->kategori == 'bahan' ? 'checked' : '' }}>
                         <label class="bahan" for="bahan">Bahan</label>
                         @error('kategori')
                             <br>
@@ -45,14 +45,3 @@
         </div>
     </div>
 </div>
-<script>
-    @error('nama')
-        $("#editPemasokModal-{{ $item->id }}").modal('show');
-    @enderror
-    @error('alamat')
-        $("#editPemasokModal-{{ $item->id }}").modal('show');
-    @enderror
-    @error('kategori')
-        $("#editPemasokModal-{{ $item->id }}").modal('show');
-    @enderror
-</script>

@@ -35,17 +35,20 @@ class PembelianController extends Controller
     {
         $request->validate([
             'tanggal' => 'required',
-            'nama' => 'required',
+            'nama' => 'required|unique:tabel_stoks',
             'id_pemasok' => 'required',
-            'nota' => 'required',
+            'note' => 'required',
             'jumlah' => 'required',
             'satuan' => 'required',
             'tipe' => 'required',
-            'harga' => 'required',
+            'price' => 'required',
         ]);
 
         $pemasok = tabel_pemasok::findOrFail($request->id_pemasok);
 
+        if (!is_numeric($request->note) || !is_numeric($request->price)) {
+            return redirect('/stok-barang')->with('fail', 'Nota atau harga harus diisi dengan angka');
+        }
         if ($request->satuan != 'pcs' && $pemasok->kategori == 'peralatan') {
             return redirect('/stok-barang')->with('fail', 'Satuan yang anda masukkan salah');
         }
@@ -65,10 +68,10 @@ class PembelianController extends Controller
                 'nama' => $request->nama,
                 'date' => $request->tanggal,
                 'id_pemasok' => $request->id_pemasok,
-                'nota' => $request->nota,
+                'nota' => $request->note,
                 'jumlah' => $request->jumlah,
                 'payment' => $request->tipe,
-                'price' => $request->harga,
+                'price' => $request->price,
             ];
             tabel_pembelian::insert($pembelian);
             return redirect('/stok-barang')->with('pesan', 'Data berhasil ditambah');
@@ -87,6 +90,10 @@ class PembelianController extends Controller
             'tipe' => 'required',
             'harga' => 'required',
         ]);
+        if (!is_numeric($request->nota) || !is_numeric($request->harga)) {
+            return redirect('/stok-barang')->with('fail', 'Nota atau harga harus diisi dengan angka');
+        }
+
         $stok_barang = tabel_stok::where('id', $id)->first();
 
         $total = $stok_barang->stok + $request->jumlah;

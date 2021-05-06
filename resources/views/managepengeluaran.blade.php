@@ -22,7 +22,7 @@
                             <input readonly type="text" name="satuan" value="{{ $item->satuan }}" class="s1">
                             <br><br>
                             <label class="label-jumlahbarang">Jumlah Barang</label>
-                            <input type="number" name="jumlah" class="jumlahbarang" max="{{ $item->stok }}" required>
+                            <input type="number" name="jumlah" class="jumlahbarang" min="0" max="{{ $item->stok }}" required>
                             @error('jumlah')
                             <div class="e-jumlah3">
                                 <span class="text-danger jumlah_error">{{ $message }}</span>
