@@ -33,7 +33,12 @@
                         <br><br>
                         <label class="label-pemasok" >Pemasok</label>
                         <select name="id_pemasok" class="pemasok">
-                            <option value="{{$item->id_pemasok}}"> {{ $item->pemasok->name }} </option>
+                            <option value disabled> pilih pemasok </option>
+                            @foreach ($pemasok as $item)
+                                @if ($item->status == 1)
+                                    <option value="{{$item->id}}"> {{ $item->name }} </option>
+                                @endif
+                            @endforeach
                         </select>
                         @error('id_pemasok')
                         <div class="e-pemasok">

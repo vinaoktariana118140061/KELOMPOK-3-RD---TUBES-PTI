@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\tabel_stok;
 use App\Models\tabel_pemasok;
 
-
 class StokController extends Controller
 {
     /**
@@ -18,7 +17,7 @@ class StokController extends Controller
     {
         $data = [
             'collection' => tabel_stok::with('pemasok', 'deleted_data')->get(),
-            'pemasok' => tabel_pemasok::all()
+            'pemasok' => tabel_pemasok::all(),
         ];
 
         return view('stokbarang', $data);

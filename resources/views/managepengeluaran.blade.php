@@ -16,7 +16,11 @@
                             <input type="text" readonly name="nama" class="namakeluar" value="{{ $item->nama }}">
                             <br><br>
                             <label class="label-kategori2">Kategori</label>
-                            <input readonly type="text" name="kategori" value="{{ $item->pemasok->kategori }}" class="peralatan2">
+                            @if ($item->pemasok != null)
+                                <input readonly type="text" name="kategori" value="{{ $item->pemasok->kategori }}" class="peralatan2"> 
+                            @else
+                                <input readonly type="text" name="kategori" value="{{ $item->deleted_data->kategori }}" class="peralatan2">
+                            @endif
                             <br><br>
                             <label class="label-satuan">Satuan</label>
                             <input readonly type="text" name="satuan" value="{{ $item->satuan }}" class="s1">
